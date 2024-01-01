@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Homepage | Santiago Quiroz</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="./assets/svg/alarado-icon-homepage.svg" alt="Logo" id="logo" />
+      <nav class="header__navbar navbar">
+        <ul class="navbar__links links">
+          <li class="links__item links__item--active" data-value="about-us">
+            <a href="#about-us">About us</a>
+          </li>
+          <li class="links__item" data-value="product">
+            <a href="#product">Product</a>
+          </li>
+          <li class="links__item" data-value="resource">
+            <a href="#resource">Resource</a>
+          </li>
+          <li class="links__item" data-value="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="header__themeToggle themeToggle">
+        <label class="themetoggle__switcher switcher">
+          <input
+            type="checkbox"
+            id="desktopThemeToggle"
+            style="visibility: hidden"
+          />
+          <span class="switcher__slider"></span>
+        </label>
+      </form>
+
+      <nav class="header__menu menu" data-state="closed">
+        <button class="menu__button" id="menuToggle">
+          <img src="assets/svg/Menu.svg" alt="menu icon" id="menuSVG" />
+        </button>
+
+        <div class="menu__content content">
+          <ul class="content__links links">
+            <li class="links__item links__item--active" data-value="about-us">
+              <a href="#about-us">About us</a>
+            </li>
+            <li class="links__item" data-value="product">
+              <a href="#product">Product</a>
+            </li>
+            <li class="links__item" data-value="resource">
+              <a href="#resource">Resource</a>
+            </li>
+            <li class="links__item" data-value="contact">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <form class="content__themeToggle themeToggle">
+            <label class="themetoggle__switcher switcher">
+              <input
+                type="checkbox"
+                id="mobileThemeToggle"
+                style="visibility: hidden"
+              />
+              <span class="switcher__slider"></span>
+            </label>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__bannerSection">
+        <div class="bannerSection__leftSide leftSide">
+          <span class="leftSide__span dark">😎 simple way to communicate</span>
+          <h1 class="leftSide__h1 dark">Actions for Accessibility in Design</h1>
+          <p class="leftSide__p">
+            The fastest way to build and deploy websites with resusable
+            components.
+          </p>
+
+          <div class="leftSide__buttons buttons">
+            <a class="buttons__solid">Get Started</a>
+            <a class="buttons__underline">Get live demo</a>
+          </div>
+
+          <ul class="leftSide__features features">
+            <li class="features__item item">
+              <span class="item__checkIcon"></span>
+              <p class="item__text">No credit card required</p>
+            </li>
+
+            <li class="features__item">
+              <span class="item__checkIcon"></span>
+              <p class="item__text">No software to install</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bannerSection__rightSide">
+          <img src="./assets/imgs/hero-image-simple-homepage.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
